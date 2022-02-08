@@ -3,7 +3,7 @@
 ## Description
 
 Hey ! Have you ever played to a League of Legends bingo and though : "Yeh this is fun but it would be way cooler if the missions validates by themselves"<br/>
-No ? Ho. Really ?<br/>
+No ? Ho... Really ?<br/>
 Well anyway because this dream has now become a reality with BingoLol !<br/>
 
 **Featuring :**
