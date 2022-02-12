@@ -6,6 +6,7 @@
 - [ ] found an other sound effect for the start button
 - [ ] maybe add sounds on hover for some elements
 - [ ] implement new missions (need good ideas)
+- [ ] add a french version
 
 ## Larger tasks
 
