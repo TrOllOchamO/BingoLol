@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>fonts/friz-quadrata-std-bold.otf</file>
+        <file>fonts/friz-quadrata-std-bold-italic.otf</file>
+        <file>fonts/friz-quadrata-std-italic.otf</file>
+        <file>fonts/friz-quadrata-std-medium.otf</file>
+        <file>styleSheets/stylesheet.qss</file>
+        <file>sounds/MissionSucceedSound.wav</file>
+        <file>sounds/MissionFailedSound.wav</file>
+        <file>sounds/BingoSucceedSound.wav</file>
+        <file>images/github-logo.png</file>
+        <file>images/png-logo.png</file>
+        <file>images/paypal-logo.png</file>
+        <file>images/iconeBingoLol.ico</file>
+        <file>images/github-logo-hovered.png</file>
+        <file>images/paypal-logo-hovered.png</file>
+        <file>images/png-logo-hovered.png</file>
+        <file>images/checkbox.png</file>
+        <file>images/checkbox-checked.png</file>
+        <file>images/checkbox-hovered.png</file>
+        <file>images/checkbox-checked-hovered.png</file>
+        <file>images/copy-seed-icone.png</file>
+        <file>images/copy-seed-icone-hovered.png</file>
+        <file>sounds/ScreenshotSound.wav</file>
+        <file>sounds/InitSound.wav</file>
+        <file>images/twitter-logo.png</file>
+        <file>images/twitter-logo-hovered.png</file>
+        <file>images/play.png</file>
+        <file>images/play-cliked.png</file>
+        <file>images/play-hovered.gif</file>
+    </qresource>
+</RCC>

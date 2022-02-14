@@ -1,0 +1,253 @@
+/* ------------------------- GLOBAL ------------------------- */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+BingoLolWindows {
+	color: #A09B8C;
+	background-color: #010A13;
+}
+
+QLabel {
+	color: #938F83;
+}
+
+/* ------------------------- QSLIDER ------------------------- */
+
+QSlider {
+	margin: 5px 3px 2px 0;
+	height: 15px;
+	border: 1px solid #785A28;
+}
+
+QSlider::groove {
+	height: 15px;
+	background: #0B1310;
+}
+
+QSlider::handle {
+	background: #60572E;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #B3A565;
+}
+
+QSlider::handle::hover {
+	background: #979758;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #B9AF70;
+}
+
+/* ------------------------ CELLS - GRID - MISSION DESCRIPTION ------------------------ */
+
+BingoGrid {
+	background-color: #010A13;
+}
+
+
+MissionDescription {
+	font: 16pt;
+	qproperty-wordWrap: true;
+	font-family: 'FrizQuadrataStd';
+	margin-top: 0.5em;
+	border-top: 1px solid;
+	border-top-color: #3C3C41;
+}
+
+BingoCell {
+	qproperty-alignment: AlignCenter;
+	qproperty-wordWrap: true;
+	font: 14pt;
+	font-family: 'FrizQuadrataStd';
+	text-align: center;
+	padding: 5px;
+}
+
+BingoCell#normal {
+	background-color: #010A13;
+	color: #CDBE91;
+	border: 2px solid;
+	border-color: qlineargradient( x1:0 y1:0, x2:0 y2:1, stop:0 #C8AA6D, stop:1 #7A5D28);
+}
+
+BingoCell#normal:hover {
+	background-color: #010A13;
+	color: #F0E6D2;
+	border: 2px solid;
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #EFE4D5, stop:1 #C89D3E);
+}
+
+BingoCell#fail {
+	background-color: qlineargradient( x1:0 y1:0, x2:0 y2:1, stop:0 #4F050E, stop:1 #A60B08);
+	color: #CDBE91;
+	border: 2px solid;
+	border-color: qlineargradient( x1:1 y1:1, x2:1 y2:0, stop:0 #C8AA6D, stop:1 #7A5D28);
+}
+
+BingoCell#fail:hover {
+	color: #F0E6D2;
+	border: 2px solid;
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #EFE4D5, stop:1 #C89D3E);
+}
+
+BingoCell#succeed {
+	background-color: qlineargradient( x1:0 y1:0, x2:0 y2:1, stop:0 #085312, stop:1 #06C206);
+	color: #CDBE91;
+	border: 2px solid;
+	border-color: qlineargradient( x1:1 y1:1, x2:1 y2:0, stop:0 #C8AA6D, stop:1 #7A5D28);
+}
+
+BingoCell#succeed:hover {
+	color: #F0E6D2;
+	border: 2px solid;
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #EFE4D5, stop:1 #C89D3E);
+}
+
+QLabel#section {
+	color: #EEE4D0;
+	font: 13pt;
+	font-family: 'FrizQuadrataStd';
+	margin-bottom: 7px;
+	border-bottom: 1px solid;
+	border-bottom-color: #785A28;
+	background-color: #010A13;
+}
+
+/* ------------------------- QPUSHBUTTON ------------------------- */
+
+QPushButton {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font: 13pt;
+	background-color: #1E2328;
+	color: #CDBE91;
+	border: 1px solid qlineargradient( x1:0 y1:0, x2:0 y2:1, stop:0 #C8AA6D, stop:1 #7A5D28);
+}
+
+QPushButton:hover {
+	background-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #1E2328, stop:1 #3F302A);
+	color: #F0E6D2;
+	border: 1px solid;
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #EFE4D5, stop:1 #C89D3E);
+}
+
+/* ------------------------- QLINEEDIT ------------------------- */
+
+QLineEdit {
+	font: 10pt;
+	background-color: #000407;
+	color: #938F83;
+	border: 1px solid #785A28;
+}
+
+/* ------------------------- QRADIOBUTTON ------------------------- */
+
+QRadioButton {
+	background-color: #010A13;
+	color: #CDBE91;
+}
+
+QRadioButton::indicator {
+	width: 11px;
+	height: 11px;
+	border: 2px solid;
+	border-radius: 7px;
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #82642A, stop:1 #B48A32);
+}
+
+QRadioButton::indicator::hover {
+	border-color: qlineargradient(x1:0 y1:0, x2:0 y2:1, stop:0 #CA9F3A, stop:1 #ECDFC6);
+}
+
+QRadioButton::indicator::unchecked {
+}
+
+QRadioButton::indicator::checked {
+	background-color: #F0E6D2;
+}
+
+GridSizeOption #radiobutton4 {
+	margin-bottom: 5px;
+}
+
+/* ------------------------- QCHECKBOX ------------------------- */
+
+QCheckBox {
+	color: #938F83;
+}
+
+QCheckBox::indicator::unchecked {
+	image: url(:/resources/images/checkbox.png);
+}
+
+QCheckBox::indicator::unchecked::hover {
+	image: url(:/resources/images/checkbox-hovered.png);
+}
+
+QCheckBox::indicator::checked {
+	image: url(:/resources/images/checkbox-checked.png);
+}
+
+QCheckBox::indicator::checked::hover {
+	image: url(:/resources/images/checkbox-checked-hovered.png);
+}
+
+/* ------------------------- SHARE OPTION ------------------------- */
+
+ClickableImage#github {
+	image: url(:/resources/images/github-logo.png);
+}
+ClickableImage#github::hover {
+	image: url(:/resources/images/github-logo-hovered.png);
+}
+
+ClickableImage#clipboard {
+	image: url(:/resources/images/png-logo.png);
+}
+ClickableImage#clipboard::hover {
+	image: url(:/resources/images/png-logo-hovered.png);
+}
+
+ClickableImage#paypal {
+	image: url(:/resources/images/paypal-logo.png);
+}
+ClickableImage#paypal::hover {
+	image: url(:/resources/images/paypal-logo-hovered.png);
+}
+
+ClickableImage#twitter {
+	image: url(:/resources/images/twitter-logo.png);
+}
+ClickableImage#twitter::hover {
+	image: url(:/resources/images/twitter-logo-hovered.png);
+}
+
+ClickableImage#seedClipboard {
+	image: url(:/resources/images/copy-seed-icone.png);
+}
+ClickableImage#seedClipboard::hover {
+	image: url(:/resources/images/copy-seed-icone-hovered.png);
+}
+
+ShareOption ClickableImage {
+	min-width: 2.7em;
+	min-height: 2.7em;
+	margin-bottom: 7px;
+}
+
+ShareOption QLabel#shareDisplay {
+	qproperty-wordWrap: true;
+}
+
+/* ------------------------- START/STOP BUTTON ------------------------- */
+
+QPushButton#startButton {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	height: 40px;
+	background-color: #010A13;
+	border: none;
+}

@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BingoCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BingoGrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BingoLolWindows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BingoOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSeedOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridSizeOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MissionDescription.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundsOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsefullFunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventHandeler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundHandeler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartPlayingBingoButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareOption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickableImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\AbstractMission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\ClientData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M17.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M21.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M26.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M27.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M28.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M30.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M31.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M33.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M34.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M35.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M36.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M37.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M38.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M39.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M40.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M41.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M42.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M43.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M44.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M45.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M46.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M47.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M48.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M49.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M50.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M51.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\Missions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UsefullFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\AbstractMission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\ClientData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M13.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M17.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M18.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M19.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M21.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M25.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M26.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M27.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M28.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M29.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M30.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M31.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M33.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M34.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M35.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M36.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M37.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M38.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M39.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M40.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M41.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M42.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M43.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M44.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M45.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M46.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M47.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M48.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M49.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M50.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M51.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\Missions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="BingoCell.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="BingoGrid.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="BingoLolWindows.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="BingoOptions.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GridSeedOption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="GridSizeOption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MissionDescription.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SoundsOption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EventHandeler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SoundHandeler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StartPlayingBingoButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ShareOption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ClickableImage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\styleSheets\stylesheet.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BingoLol.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\images\iconeBingoLol.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
