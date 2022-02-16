@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
     
-    app.setWindowIcon(QIcon(":/resources/images/iconeBingoLol.ico"));
+    app.setWindowIcon(QIcon(":/resources/images/bingoLol_icon/icon.ico"));
 
     QResource::registerResource("resources/Resource.qrc");
     UsefullFunc::importUsedFonts();

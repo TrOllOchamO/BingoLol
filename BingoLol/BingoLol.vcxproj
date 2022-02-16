@@ -235,12 +235,9 @@
     <ClInclude Include="Missions\M8.h" />
     <ClInclude Include="Missions\M9.h" />
     <ClInclude Include="Missions\Missions.h" />
-    <ClInclude Include="resource.h" />
     <QtMoc Include="SoundHandeler.h" />
     <QtMoc Include="StartPlayingBingoButton.h" />
     <QtMoc Include="ShareOption.h" />
-    <ClInclude Include="resource1.h" />
-    <ClInclude Include="resource2.h" />
     <ClInclude Include="UsefullFunc.h" />
     <QtMoc Include="SoundsOption.h" />
     <QtMoc Include="MissionDescription.h" />
@@ -256,12 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\styleSheets\stylesheet.qss" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="BingoLol.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="resources\images\iconeBingoLol.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

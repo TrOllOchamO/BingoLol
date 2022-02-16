@@ -3,17 +3,17 @@
 StartPlayingBingoButton::StartPlayingBingoButton(BingoGrid* grid, QWidget* parent) :
 	QPushButton(parent), m_grid(grid), m_parent(parent), m_gameIsPlaying(false), m_isHovered(false)
 {
-	m_hoveredGif = new QMovie(":/resources/images/play-hovered.gif");
+	m_hoveredGif = new QMovie(":/resources/images/play_button/en/play_hover.gif");
 
-	m_startButtonPixmap.load(":/resources/images/play.png");
-	m_startedButtonPixmap.load(":/resources/images/play-cliked.png");
+	m_startButtonPixmap.load(":/resources/images/play_button/en/play.png");
+	m_startedButtonPixmap.load(":/resources/images/play_button/en/play_clicked.png");
 	m_startButtonIcon.addPixmap(m_startButtonPixmap);
 	m_startedButtonIcon.addPixmap(m_startedButtonPixmap);
 
 	this->setStartButton();
 	this->setObjectName("startButton");
 
-	//creating the timer that will run the missions every 0.1 sec
+	//creating the timer that will run the missions every 0.1 s	ec
 	m_timerThatUpdtateMissions = new QTimer(this);
 	m_timerThatUpdtateMissions->start(100);
 

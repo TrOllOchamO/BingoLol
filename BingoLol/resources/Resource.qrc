@@ -8,25 +8,27 @@
         <file>sounds/MissionSucceedSound.wav</file>
         <file>sounds/MissionFailedSound.wav</file>
         <file>sounds/BingoSucceedSound.wav</file>
-        <file>images/github-logo.png</file>
-        <file>images/png-logo.png</file>
-        <file>images/paypal-logo.png</file>
-        <file>images/iconeBingoLol.ico</file>
-        <file>images/github-logo-hovered.png</file>
-        <file>images/paypal-logo-hovered.png</file>
-        <file>images/png-logo-hovered.png</file>
-        <file>images/checkbox.png</file>
-        <file>images/checkbox-checked.png</file>
-        <file>images/checkbox-hovered.png</file>
-        <file>images/checkbox-checked-hovered.png</file>
-        <file>images/copy-seed-icone.png</file>
-        <file>images/copy-seed-icone-hovered.png</file>
         <file>sounds/ScreenshotSound.wav</file>
-        <file>sounds/InitSound.wav</file>
-        <file>images/twitter-logo.png</file>
-        <file>images/twitter-logo-hovered.png</file>
-        <file>images/play.png</file>
-        <file>images/play-cliked.png</file>
-        <file>images/play-hovered.gif</file>
+        <file>images/checkbox/checkbox.png</file>
+        <file>images/checkbox/checkbox_checked.png</file>
+        <file>images/checkbox/checkbox_checked_hover.png</file>
+        <file>images/checkbox/checkbox_hover.png</file>
+        <file>images/copy_seed_icon/icon.png</file>
+        <file>images/copy_seed_icon/icon_hover.png</file>
+        <file>images/github_icon/icon.png</file>
+        <file>images/github_icon/icon_hover.png</file>
+        <file>images/paypal_icon/icon.png</file>
+        <file>images/paypal_icon/icon_hover.png</file>
+        <file>images/play_button/en/play.png</file>
+        <file>images/play_button/en/play_clicked.png</file>
+        <file>images/play_button/en/play_hover.gif</file>
+        <file>images/play_button/fr/play.png</file>
+        <file>images/play_button/fr/play_clicked.png</file>
+        <file>images/play_button/fr/play_hover.gif</file>
+        <file>images/screenshot_icon/icon.png</file>
+        <file>images/screenshot_icon/icon_hover.png</file>
+        <file>images/twitter_icon/icon.png</file>
+        <file>images/twitter_icon/icon_hover.png</file>
+        <file>images/bingoLol_icon/icon.ico</file>
     </qresource>
 </RCC>
