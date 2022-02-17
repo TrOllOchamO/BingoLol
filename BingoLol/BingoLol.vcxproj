@@ -238,6 +238,7 @@
     <QtMoc Include="SoundHandeler.h" />
     <QtMoc Include="StartPlayingBingoButton.h" />
     <QtMoc Include="ShareOption.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="UsefullFunc.h" />
     <QtMoc Include="SoundsOption.h" />
     <QtMoc Include="MissionDescription.h" />
@@ -253,6 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="resources\styleSheets\stylesheet.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BingoLol.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\images\bingoLol_icon\icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
