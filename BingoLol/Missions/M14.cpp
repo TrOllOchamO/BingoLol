@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "How did we get there ?"
@@ -20,7 +19,7 @@ M14::~M14()
 
 bool M14::mission()
 {
-	vector<string> playerList;
+	std::vector<std::string> playerList;
 	Missions::getPlayerList(m_gameData, playerList);
 
 	for (auto it : m_gameData->operator[]("events")["Events"])

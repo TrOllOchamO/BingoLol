@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "One stone two birds"
@@ -24,7 +23,7 @@ bool M8::mission()
 	{
 		if (it["EventName"] == "Multikill")
 		{
-			string playerName(Missions::getActivePlayerName(m_gameData));
+			std::string playerName(Missions::getActivePlayerName(m_gameData));
 			if (it["KillerName"] == playerName)
 			{
 				m_isMissionDone = true;

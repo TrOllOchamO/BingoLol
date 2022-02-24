@@ -1,10 +1,9 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
-#define MISSION_NAME "Bull's eye"
-#define MISSION_DESCRIPTION "Your team kill the Herald."
+#define MISSION_NAME "Come here Shelly"
+#define MISSION_DESCRIPTION "Your team kill the first Herald."
 
 M15::M15() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
 {
@@ -24,14 +23,19 @@ bool M15::mission()
 	{
 		if (it["EventName"] == "HeraldKill")
 		{
-			string playerName(Missions::getActivePlayerName(m_gameData));
-			string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
-			string heraldKillerName(it["KillerName"]);
-			string heraldKillerTeam(Missions::getSummonerTeam(m_gameData, heraldKillerName));
+			std::string playerName(Missions::getActivePlayerName(m_gameData));
+			std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+			std::string heraldKillerName(it["KillerName"]);
+			std::string heraldKillerTeam(Missions::getSummonerTeam(m_gameData, heraldKillerName));
 			
 			if (heraldKillerTeam == activePlayerTeam)
 			{
 				m_isMissionDone = true;
+				return true;
+			}
+			else
+			{
+				m_isMissionFailed = true;
 				return true;
 			}
 		}

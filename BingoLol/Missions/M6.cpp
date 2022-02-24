@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Is this LCS ?"

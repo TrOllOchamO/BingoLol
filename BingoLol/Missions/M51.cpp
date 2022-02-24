@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Godzilla"
@@ -20,14 +19,14 @@ M51::~M51()
 
 bool M51::mission()
 {
-	string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
 	short numberOfParticipationOnBatiments(0);
 
 	for (auto it : m_gameData->operator[]("events")["Events"])
 	{
 		if ((it["EventName"] == "InhibKilled") || (it["EventName"] == "TurretKilled"))
 		{
-			string killerName(it["KillerName"]);
+			std::string killerName(it["KillerName"]);
 
 			//the player killed the batiment 
 			if (killerName == playerName) {numberOfParticipationOnBatiments++;}

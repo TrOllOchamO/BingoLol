@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Not even close !"
@@ -20,7 +19,7 @@ M3::~M3()
 
 bool M3::mission()
 {
-	string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
 	bool isActivePlayerDead(Missions::getIfSummonerIsDead(m_gameData, playerName));
 
 	if (isActivePlayerDead)

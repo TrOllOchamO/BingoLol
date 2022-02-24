@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "PLAY SAFE OMG"
@@ -24,8 +23,8 @@ bool M1::mission()
 
 	if (gameTime <= 900)
 	{
-		string playerName(Missions::getActivePlayerName(m_gameData));
-		string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+		std::string playerName(Missions::getActivePlayerName(m_gameData));
+		std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 
 		for (auto it : m_gameData->operator[]("allPlayers"))
 		{

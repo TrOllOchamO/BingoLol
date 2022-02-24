@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME ""
@@ -24,12 +23,12 @@ bool M35::mission()
 	{
 		if (it["EventName"] == "FirstBrick")
 		{
-			string playerName(Missions::getActivePlayerName(m_gameData));
-			string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
-			string killerName(it["KillerName"]);
-			vector<string> playerList;
+			std::string playerName(Missions::getActivePlayerName(m_gameData));
+			std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+			std::string killerName(it["KillerName"]);
+			std::vector<std::string> playerList;
 			Missions::getPlayerList(m_gameData, playerList);
-			string killerTeam;
+			std::string killerTeam;
 
 			//if the tower has been destroyed by a player
 			if (find(playerList.begin(), playerList.end(), killerName) != playerList.end())

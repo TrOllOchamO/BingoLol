@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Sly Cooper"
@@ -26,10 +25,10 @@ bool M25::mission()
 		{
 			if (it["Stolen"] == "True")
 			{
-				string playerName(Missions::getActivePlayerName(m_gameData));
-				string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
-				string stealerName(it["KillerName"]);
-				string stealerTeam(Missions::getSummonerTeam(m_gameData, stealerName));
+				std::string playerName(Missions::getActivePlayerName(m_gameData));
+				std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+				std::string stealerName(it["KillerName"]);
+				std::string stealerTeam(Missions::getSummonerTeam(m_gameData, stealerName));
 
 				if (activePlayerTeam == stealerTeam)
 				{

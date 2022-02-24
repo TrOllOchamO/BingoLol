@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Peaceful & harmless life"
@@ -24,8 +23,8 @@ bool M5::mission()
 
 	if (gameTime >= 600)
 	{
-		string playerName(Missions::getActivePlayerName(m_gameData));
-		string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+		std::string playerName(Missions::getActivePlayerName(m_gameData));
+		std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 		for (auto it : m_gameData->operator[]("allPlayers"))
 		{
 			if ((it["summonerName"] != playerName) && (it["team"] == activePlayerTeam)) //the player is a teammate

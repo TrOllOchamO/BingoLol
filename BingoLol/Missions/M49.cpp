@@ -1,9 +1,8 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
-#define MISSION_NAME "What's 9 plus 10 ?"
+#define MISSION_NAME "What’s 9 plus 10 ?"
 #define MISSION_DESCRIPTION "Someone is involved in 21 or more kills."
 
 M49::M49() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)

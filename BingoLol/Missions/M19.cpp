@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Ace..."
@@ -24,8 +23,8 @@ bool M19::mission()
 	{
 		if (it["EventName"] == "Ace")
 		{
-			string playerName(Missions::getActivePlayerName(m_gameData));
-			string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+			std::string playerName(Missions::getActivePlayerName(m_gameData));
+			std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 
 			if (it["AcingTeam"] != activePlayerTeam)
 			{

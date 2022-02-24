@@ -1,10 +1,10 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
+using string = std::string;
 
 
-string Missions::getActivePlayerName(json* gameData)
+std::string Missions::getActivePlayerName(json* gameData)
 {
 	return gameData->operator[]("activePlayer")["summonerName"];
 }
@@ -18,7 +18,7 @@ int Missions::getSummonerFarm(json* gameData, string& summonerName)
 			return it["scores"]["creepScore"];
 		}
 	}
-	cout << "something goes wrong with Missions::getSummonerFarm()" << endl;
+	std::cout << "something goes wrong with Missions::getSummonerFarm()" << std::endl;
 	return -1;
 }
 
@@ -50,7 +50,7 @@ bool Missions::getIfSummonerIsDead(json* gameData, string& summonerName)
 			return it["isDead"];
 		}
 	}
-	cout << "something goes wrong with Missions::getIfSummonerIsDead()" << endl;
+	std::cout << "something goes wrong with Missions::getIfSummonerIsDead()" << std::endl;
 	return false;
 }
 
@@ -96,7 +96,7 @@ string Missions::getSummonerTeam(json* gameData, string& summonerName)
 			return it["team"];
 		}
 	}
-	cout << "something goes wrong with Missions::getSummonerTeam()" << endl;
+	std::cout << "something goes wrong with Missions::getSummonerTeam()" << std::endl;
 	return "";
 }
 
@@ -124,7 +124,7 @@ int Missions::getActivePlayerMaxHealth(json* gameData)
 	return gameData->operator[]("activePlayer")["championStats"]["maxHealth"];
 }
 
-void Missions::getPlayerList(json* gameData, vector<string>& playerList)
+void Missions::getPlayerList(json* gameData, std::vector<string>& playerList)
 {
 	for (auto it : gameData->operator[]("allPlayers"))
 	{
@@ -132,7 +132,7 @@ void Missions::getPlayerList(json* gameData, vector<string>& playerList)
 	}
 }
 
-void Missions::getTeamList(json* gameData, vector<string>& playerList, string& team)
+void Missions::getTeamList(json* gameData, std::vector<string>& playerList, string& team)
 {
 	for (auto it : gameData->operator[]("allPlayers"))
 	{
@@ -156,11 +156,11 @@ int Missions::getLastKillTimeEvent(json* gameData) //return -1 if nobody has bee
 	return lastKillEventTime;
 }
 
-vector<int> Missions::getRandomListOfMissionNumber(int& numberOfMissionsWanted, unsigned long long& randomSeed)
+std::vector<int> Missions::getRandomListOfMissionNumber(int& numberOfMissionsWanted, unsigned long long& randomSeed)
 {
 	if (numberOfMissionsWanted > TOTAL_NUMBER_OF_MISSIONS)
 	{
-		throw "Missions::getRandomMissionList : Sorry, you can request for " + to_string(TOTAL_NUMBER_OF_MISSIONS) + " maximum.";
+		throw "Missions::getRandomMissionList : Sorry, you can request for " + std::to_string(TOTAL_NUMBER_OF_MISSIONS) + " maximum.";
 	}
 	if (numberOfMissionsWanted < 1)
 	{
@@ -168,7 +168,7 @@ vector<int> Missions::getRandomListOfMissionNumber(int& numberOfMissionsWanted, 
 	}
 
 	srand(randomSeed);
-	vector<int> listOfMissionNumber;
+	std::vector<int> listOfMissionNumber;
 	listOfMissionNumber.push_back(rand() % TOTAL_NUMBER_OF_MISSIONS);
 
 	while (listOfMissionNumber.size() < numberOfMissionsWanted)
@@ -193,37 +193,37 @@ vector<int> Missions::getRandomListOfMissionNumber(int& numberOfMissionsWanted, 
 }
 
 
-vector<AbstractMission*> Missions::getRandomMissionList(int& numberOfMissionsWanted)
+std::vector<AbstractMission*> Missions::getRandomMissionList(int& numberOfMissionsWanted)
 {
 	unsigned long long actualTime(time(NULL));
 
 	return getMissionListFromlistOfMissionNumber(Missions::getRandomListOfMissionNumber(numberOfMissionsWanted, actualTime));
 }
 
-vector<AbstractMission*> Missions::getRandomMissionListForGrid(int gridSize, string& saveSeed)
+std::vector<AbstractMission*> Missions::getRandomMissionListForGrid(int gridSize, string& saveSeed)
 {
 	int numberOfMissionsWanted(gridSize * gridSize);
 	unsigned long long actualTime(time(NULL));
 
-	saveSeed = to_string(gridSize) + to_string(actualTime);
+	saveSeed = std::to_string(gridSize) + std::to_string(actualTime);
 
 	return getMissionListFromlistOfMissionNumber(Missions::getRandomListOfMissionNumber(numberOfMissionsWanted, actualTime));
 }
 
-vector<AbstractMission*> Missions::getMissionListFromGridSeed(string& gridSeed, string& saveSeed)
+std::vector<AbstractMission*> Missions::getMissionListFromGridSeed(string& gridSeed, string& saveSeed)
 {
 	int gridSize(std::stoi(gridSeed.substr(0, 1).c_str()));
 	int numberOfMissionsWanted(gridSize * gridSize);
 	unsigned long long seed(std::strtoull(gridSeed.substr(1).c_str(), NULL, 10));
 
-	saveSeed = to_string(gridSize) + to_string(seed);
+	saveSeed = std::to_string(gridSize) + std::to_string(seed);
 
 	return getMissionListFromlistOfMissionNumber(Missions::getRandomListOfMissionNumber(numberOfMissionsWanted, seed));
 }
 
-vector<AbstractMission*> Missions::getMissionListFromlistOfMissionNumber(vector<int> listOfMissionNumber)
+std::vector<AbstractMission*> Missions::getMissionListFromlistOfMissionNumber(std::vector<int> listOfMissionNumber)
 {
-	vector<AbstractMission*> missionList;
+	std::vector<AbstractMission*> missionList;
 
 	for (int i = 0; i < listOfMissionNumber.size(); i++)
 	{
@@ -384,6 +384,21 @@ vector<AbstractMission*> Missions::getMissionListFromlistOfMissionNumber(vector<
 			break;
 		case 51:
 			missionList.push_back(new M51);
+			break;
+		case 52:
+			missionList.push_back(new M52);
+			break;
+		case 53:
+			missionList.push_back(new M53);
+			break;
+		case 54:
+			missionList.push_back(new M54);
+			break;
+		case 55:
+			missionList.push_back(new M55);
+			break;
+		case 56:
+			missionList.push_back(new M56);
 			break;
 		default:
 			throw "Missions::getMissionListFromlistOfMissionNumber : One of the int in your list does not correspond with any mission.";

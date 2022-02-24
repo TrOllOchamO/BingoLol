@@ -233,6 +233,21 @@
     <ClCompile Include="Missions\Missions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Missions\M52.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M53.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M54.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M55.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Missions\M56.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UsefullFunc.h">
@@ -404,6 +419,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M52.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M53.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M54.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M55.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Missions\M56.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

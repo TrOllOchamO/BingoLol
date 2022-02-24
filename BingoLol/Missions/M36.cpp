@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Vision is the key"
@@ -22,7 +21,7 @@ bool M36::mission()
 {
 	int controlWardId(2055);
 	bool someoneHasTheMissionItem(false);
-	string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
 
 	for (auto it : m_gameData->operator[]("allPlayers"))
 	{

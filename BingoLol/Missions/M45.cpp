@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Yasuo power spike"
@@ -24,7 +23,6 @@ bool M45::mission()
 	{
 		if (it["scores"]["deaths"] == 10)
 		{
-			cout << "gg" << endl;
 			m_isMissionDone = true;
 			return true;
 		}

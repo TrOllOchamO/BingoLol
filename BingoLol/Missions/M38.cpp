@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Revenge !"
@@ -20,7 +19,7 @@ M38::~M38()
 
 bool M38::mission()
 {
-    string playerName(Missions::getActivePlayerName(m_gameData));
+    std::string playerName(Missions::getActivePlayerName(m_gameData));
     int gameTime(Missions::getGameTime(m_gameData));
     int timeToTakeRevenge(120); //2min to take revenge 
 
@@ -29,7 +28,7 @@ bool M38::mission()
         bool isActivePlayerDead(Missions::getIfSummonerIsDead(m_gameData, playerName));
         if (isActivePlayerDead) //revenge time begin !
         {
-            vector<string> playerList;
+            std::vector<std::string> playerList;
             Missions::getPlayerList(m_gameData, playerList);
 
             //getting the murderer name

@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Bruh moment"
@@ -26,10 +25,10 @@ bool M10::mission()
 		{
 			if (it["KillStreak"] == 3)
 			{
-				string playerName(Missions::getActivePlayerName(m_gameData));
-				string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
-				string killerName(it["KillerName"]);
-				string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
+				std::string playerName(Missions::getActivePlayerName(m_gameData));
+				std::string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+				std::string killerName(it["KillerName"]);
+				std::string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
 				if (playerTeam != killerTeam)
 				{
 					m_isMissionDone = true;

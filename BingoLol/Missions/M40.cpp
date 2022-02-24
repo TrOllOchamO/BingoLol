@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Survivor"
@@ -21,14 +20,14 @@ M40::~M40()
 bool M40::mission()
 {
     short numberOfrespwnedInhibs(0);
-    string playerName(Missions::getActivePlayerName(m_gameData));
-    string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+    std::string playerName(Missions::getActivePlayerName(m_gameData));
+    std::string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 
     for (auto it : m_gameData->operator[]("events")["Events"])
     {
         if (it["EventName"] == "InhibRespawned")
         {
-            string inhibName(it["InhibRespawned"]);
+            std::string inhibName(it["InhibRespawned"]);
             if (Missions::getInhibTeam(inhibName) == playerTeam)
             {
                 numberOfrespwnedInhibs++;

@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Split pusher"
@@ -20,7 +19,7 @@ M37::~M37()
 
 bool M37::mission()
 {
-	string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
 
 	for (auto it : m_gameData->operator[]("events")["Events"])
 	{

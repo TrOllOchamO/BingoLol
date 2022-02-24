@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME ""
@@ -20,8 +19,8 @@ M33::~M33()
 
 bool M33::mission()
 {
-	string playerName(Missions::getActivePlayerName(m_gameData));
-	string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 	int numberOfDrakeForAllyTeam(0);
 	int numberOfDrakeForEnnemyTeam(0);
 
@@ -29,8 +28,8 @@ bool M33::mission()
 	{
 		if (it["EventName"] == "DragonKill")
 		{
-			string killerName(it["KillerName"]);
-			string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
+			std::string killerName(it["KillerName"]);
+			std::string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
 
 			if (activePlayerTeam == killerTeam)
 			{

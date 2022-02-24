@@ -166,6 +166,11 @@
     <ClCompile Include="Missions\M5.cpp" />
     <ClCompile Include="Missions\M50.cpp" />
     <ClCompile Include="Missions\M51.cpp" />
+    <ClCompile Include="Missions\M52.cpp" />
+    <ClCompile Include="Missions\M53.cpp" />
+    <ClCompile Include="Missions\M54.cpp" />
+    <ClCompile Include="Missions\M55.cpp" />
+    <ClCompile Include="Missions\M56.cpp" />
     <ClCompile Include="Missions\M6.cpp" />
     <ClCompile Include="Missions\M7.cpp" />
     <ClCompile Include="Missions\M8.cpp" />
@@ -230,6 +235,11 @@
     <ClInclude Include="Missions\M5.h" />
     <ClInclude Include="Missions\M50.h" />
     <ClInclude Include="Missions\M51.h" />
+    <ClInclude Include="Missions\M52.h" />
+    <ClInclude Include="Missions\M53.h" />
+    <ClInclude Include="Missions\M54.h" />
+    <ClInclude Include="Missions\M55.h" />
+    <ClInclude Include="Missions\M56.h" />
     <ClInclude Include="Missions\M6.h" />
     <ClInclude Include="Missions\M7.h" />
     <ClInclude Include="Missions\M8.h" />

@@ -5,8 +5,9 @@
 #include <cstdlib>
 #include <time.h>
 #include <iostream>
+#include <map>
 
-#define TOTAL_NUMBER_OF_MISSIONS 52
+#define TOTAL_NUMBER_OF_MISSIONS 57
 #include "nlohmann/json.hpp"
 #include "AbstractMission.h"
 #include "M0.h"
@@ -61,6 +62,11 @@
 #include "M49.h"
 #include "M50.h"
 #include "M51.h"
+#include "M52.h"
+#include "M53.h"
+#include "M54.h"
+#include "M55.h"
+#include "M56.h"
 
 
 class Missions

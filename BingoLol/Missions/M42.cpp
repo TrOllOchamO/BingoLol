@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Martyrdom"
@@ -20,7 +19,7 @@ M42::~M42()
 
 bool M42::mission()
 {
-    string playerName(Missions::getActivePlayerName(m_gameData));
+    std::string playerName(Missions::getActivePlayerName(m_gameData));
     bool isPlayerDead(Missions::getIfSummonerIsDead(m_gameData, playerName));
 
     if (isPlayerDead)
@@ -33,7 +32,7 @@ bool M42::mission()
         {
             if (it["EventName"] == "ChampionKill")
             {
-                string killerName(it["KillerName"]);
+                std::string killerName(it["KillerName"]);
                 int whenThekillHappened(it["EventTime"]);
 
                 if ((killerName == playerName) && (whenThekillHappened >= m_whenPlayerGotKilled))

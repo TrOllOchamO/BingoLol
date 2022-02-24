@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Feel the loneliness..."
@@ -22,8 +21,8 @@ bool M48::mission()
 {
     bool isPlayerAlive(true);
 	short numberAlivesSummonersInPlayerTeam(0);
-	string playerName(Missions::getActivePlayerName(m_gameData));
-	string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerTeam(Missions::getSummonerTeam(m_gameData, playerName));
 
 	for (auto it : m_gameData->operator[]("allPlayers"))
 	{

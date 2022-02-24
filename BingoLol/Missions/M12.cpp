@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Pearl Harbor"
@@ -24,10 +23,10 @@ bool M12::mission()
 	{
 		if (it["EventName"] == "FirstBlood")
 		{
-			string playerName(Missions::getActivePlayerName(m_gameData));
-			string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
-			string killerName(it["Recipient"]);
-			string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
+			std::string playerName(Missions::getActivePlayerName(m_gameData));
+			std::string activePlayerTeam(Missions::getSummonerTeam(m_gameData, playerName));
+			std::string killerName(it["Recipient"]);
+			std::string killerTeam(Missions::getSummonerTeam(m_gameData, killerName));
 
 			if (killerTeam == activePlayerTeam)
 			{

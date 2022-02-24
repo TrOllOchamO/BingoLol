@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Can't touch this"
@@ -21,7 +20,7 @@ M29::~M29()
 bool M29::mission()
 {
 	int gameTime(Missions::getGameTime(m_gameData));
-	string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
 
 	for (auto it : m_gameData->operator[]("allPlayers"))
 	{

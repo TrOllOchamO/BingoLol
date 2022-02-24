@@ -1,6 +1,5 @@
 #include "Missions.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 #define MISSION_NAME "Cyber bullying"
@@ -20,8 +19,8 @@ M46::~M46()
 
 bool M46::mission()
 {
-	string playerName(Missions::getActivePlayerName(m_gameData));
-	string lastVictimeName("");
+	std::string playerName(Missions::getActivePlayerName(m_gameData));
+	std::string lastVictimeName("");
 
 	for (auto it : m_gameData->operator[]("events")["Events"])
 	{
