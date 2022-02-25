@@ -23,15 +23,15 @@ BingoOptions::BingoOptions(BingoGrid* bingoGrid, QWidget* parent) :
 
 	m_mainLayout->addWidget(m_startStopPlayingButton);
 
-	m_mainLayout->addWidget(m_bingoLolSection);
-	m_mainLayout->addWidget(m_shareOption);
+	m_mainLayout->addWidget(m_gridSection);
+	m_mainLayout->addWidget(m_gridSizeOption);
+	m_mainLayout->addWidget(m_gridSeedOption);
 
 	m_mainLayout->addWidget(m_soundSection);
 	m_mainLayout->addWidget(m_soundOptions);
 
-	m_mainLayout->addWidget(m_gridSection);
-	m_mainLayout->addWidget(m_gridSizeOption);
-	m_mainLayout->addWidget(m_gridSeedOption);
+	m_mainLayout->addWidget(m_bingoLolSection);
+	m_mainLayout->addWidget(m_shareOption);
 
 	QSizePolicy qsp;
 	qsp.setHeightForWidth(true);
