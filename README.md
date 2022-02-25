@@ -16,7 +16,8 @@ Well anyway because this dream has now become a reality with BingoLol !<br/>
 
 ## How to play ?
 <!-- Dont forget to add the realese version and the link to it-->
-[Download](https://github.com/TrOllOchamO/BingoLol/archive/refs/heads/main.zip) the project, unzip the .exe, and ggwp you are good to go !
+[Download](https://github.com/TrOllOchamO/BingoLol/archive/refs/heads/main.zip) the project, unzip the .exe, and ggwp you are good to go ! <br>
+[<img src="./BingoLol/resources/images/md_github_images/BingoLol.png" width="550"/>](./BingoLol/resources/images/md_github_images/BingoLol.png)
 
 ## How do i help the project ?
 #### You can :
