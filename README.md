@@ -29,6 +29,6 @@ Well anyway because this dream has now become a reality with BingoLol !<br/>
 * Donate on [Paypal](https://paypal.me/TrOllOchamO?locale.x=fr_FR)
 
 ## Thanks
-Special thanks to [the people who helped on the project](
+Special thanks to [the people who helped on the project](https://github.com/TrOllOchamO/BingoLol/blob/main/Thanks.md)
 
 
