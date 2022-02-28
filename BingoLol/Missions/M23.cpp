@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME ""
+#define MISSION_NAME "I’m Unda da Watur"
 #define MISSION_DESCRIPTION "Your team get an ocean drake."
 
 M23::M23() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)

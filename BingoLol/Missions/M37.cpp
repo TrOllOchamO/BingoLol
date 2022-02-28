@@ -3,7 +3,7 @@
 using json = nlohmann::json;
 
 #define MISSION_NAME "Split pusher"
-#define MISSION_DESCRIPTION "Finish a turret without the help of any of your allies."
+#define MISSION_DESCRIPTION "Finish a tower without the help of any of your allies."
 
 M37::M37() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
 {

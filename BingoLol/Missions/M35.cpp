@@ -2,8 +2,8 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME ""
-#define MISSION_DESCRIPTION "Your team get the first Turret."
+#define MISSION_NAME "Wrecking ball"
+#define MISSION_DESCRIPTION "Your team get the first tower."
 
 M35::M35() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
 {

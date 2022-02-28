@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME ""
+#define MISSION_NAME "I can see you"
 #define MISSION_DESCRIPTION "Your team has 15 more vision score than the opposing team."
 
 M55::M55() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)

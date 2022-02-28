@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME ""
+#define MISSION_NAME "Genocide"
 #define MISSION_DESCRIPTION "Your team has 35 kills or more."
 
 M50::M50() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)

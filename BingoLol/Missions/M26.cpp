@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME ""
+#define MISSION_NAME "Swiper no swiping !"
 #define MISSION_DESCRIPTION "The ennemy team steal a drake."
 
 M26::M26() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
