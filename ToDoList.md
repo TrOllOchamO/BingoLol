@@ -10,6 +10,9 @@
 
 ## Larger tasks
 
+### ⚠️ Compile the project for mac users ⚠️
+It would be very cool if someone could compile the project for mac since this is a real pain to do. So if you feel good about compiling staticaly QT and Curl to help it would be great.
+
 ### Add an overlay
 This would be the most impactfull addition to the project, the ability to see the advecement of the grid without needing to alt + tab the game.
 We could see the mission who just validate/invalidate in real time and maybe even see a miniaturised version of the grid to see wich line/column is about to be completed.
