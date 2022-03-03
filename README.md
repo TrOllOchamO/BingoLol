@@ -15,7 +15,7 @@ Well anyway because this dream has now become a reality with BingoLol !<br/>
 * The possiblity to share a screenshot of your finished grid easely
 
 ## How to play ?
-Download the .exe from [here](https://github.com/TrOllOchamO/BingoLol/releases/download/latest/BingoLol.exe), or from [our website](https://vad3l.github.io/BingoLeagueofLegends.github.io/), run it, press the play button, and ggwp you are good to go ! <br>
+Download the .exe from [here](https://github.com/TrOllOchamO/BingoLol/releases/download/latest/BingoLol.exe), or from [our website](https://vad3l.github.io/BingoLeagueofLegends.github.io/), unzip it, run it, press the play button, and ggwp you are good to go ! <br>
 [<img src="./BingoLol/resources/images/md_github_images/BingoLol.png" width="550"/>](./BingoLol/resources/images/md_github_images/BingoLol.png)
 
 ## How do i help the project ?
