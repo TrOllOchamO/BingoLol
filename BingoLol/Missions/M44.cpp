@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME "Wrecking ball"
+#define MISSION_NAME "Time to Mine !"
 #define MISSION_DESCRIPTION "The first tower fall before minute 10."
 
 M44::M44() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
