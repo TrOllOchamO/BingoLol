@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME "Tot diff !"
+#define MISSION_NAME "Top diff !"
 #define MISSION_DESCRIPTION "A toplane inhibitor get destroyed."
 
 M17::M17() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION)
