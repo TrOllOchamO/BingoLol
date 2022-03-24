@@ -2,7 +2,7 @@
 
 using json = nlohmann::json;
 
-#define MISSION_NAME "Sould i b ?"
+#define MISSION_NAME "Should i b ?"
 #define MISSION_DESCRIPTION "Stay alive 1min30 with your HP below 40%."
 
 M2::M2() : AbstractMission(MISSION_NAME, MISSION_DESCRIPTION), m_wasUnder40Percent(false), m_whenDidHeWasUnder40Percent(0)
